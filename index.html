@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accordian</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+                <div class="accordion" id="accordionExample">
+                    <h1>ACCORDION USE</h1>
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn btn-block text-left" type="button" >
+                                <div class="row">
+                                    <div class="col-sm-11">Accordion #1</div>
+                                    <div class="col-sm-1">
+                                        <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="plus_1">+</span>
+                                        <span class="neg_1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-</span>
+                                    </div>
+                                </div>
+
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    SQL (Structured Query Language) is used to perform operations on the records stored in the database, such as updating records, inserting records, deleting records, creating and modifying database tables, views, etc.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn btn-block text-left collapsed" type="button" >
+                                    <div class="row">
+                                            <div class="col-sm-11"> Accordion #2</div>
+                                            <div class="col-sm-1">
+                                                <span data-toggle="collapse" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="plus_2">+</span>
+                                            </div>
+                                        </div>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    SQL tutorial provides basic and advanced concepts of SQL. Our SQL tutorial is designed for both beginners and professionals.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn btn-block text-left collapsed" type="button" >
+                                    <div class="row">
+                                            <div class="col-sm-11"> Accordion #3</div>
+                                            <div class="col-sm-1">
+                                                <span data-toggle="collapse" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="plus_2">+</span>
+                                            </div>
+                                        </div>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    SQL is a short-form of the structured query language, and it is pronounced as S-Q-L or sometimes as See-Quell.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+                $(document).ready(function(){
+                  $(".plus_1").click(function(){
+                    $(".neg_1").show();
+                  });
+                  $(".plus_1").click(function(){
+                    $(".plus_1").hide();
+                  });
+                  $(".neg_1").click(function(){
+                    $(".neg_1").hide();
+                  });
+                  $(".neg_1").click(function(){
+                    $(".plus_1").show();
+                  });
+
+                });
+          </script>
+          
+    </div>
+</body>
+</html>

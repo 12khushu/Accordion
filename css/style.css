@@ -1,0 +1,16 @@
+.plus_1{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+}
+.plus_2{
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+}
+.neg_1{
+    font-size: 40px;
+    text-decoration: none;
+    color: blue;
+    display:none;
+}
